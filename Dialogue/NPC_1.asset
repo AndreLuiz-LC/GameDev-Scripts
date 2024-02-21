@@ -15,4 +15,22 @@ MonoBehaviour:
   actor: {fileID: 5250935750763627848, guid: 1b04cfc29442df54abdf722023bc488d, type: 3}
   speakerSprite: {fileID: 0}
   sentence: 
-  dialogues: []
+  dialogues:
+  - actorName: "her\xF3i"
+    profile: {fileID: 0}
+    sentence:
+      portuguese: "Ol\xE1, forasteiro. Como voc\xEA est\xE1?"
+      english: Greetings, outlaw. How are you doing?
+      spanish: Hola, forasteiro. Que tal?
+  - actorName: heroi
+    profile: {fileID: 0}
+    sentence:
+      portuguese: Tudo bem contigo?
+      english: Is everything alright with you?
+      spanish: Que tal??
+  - actorName: '>:)'
+    profile: {fileID: 0}
+    sentence:
+      portuguese: "Isso \xE9 uma simula\xE7\xE3o."
+      english: This is a simulation.
+      spanish: "Esto \xE9s una simulaci\xF3n"
