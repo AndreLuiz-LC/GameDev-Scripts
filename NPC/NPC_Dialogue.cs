@@ -60,8 +60,12 @@ public class NPC_Dialogue : MonoBehaviour
 
         if(hit != null)
         {
-            playerHit = true;
+            if (hit.CompareTag("Player")) 
+            {
+                playerHit = true;
+            }
         }
+        
         else
         {
             playerHit = false;
