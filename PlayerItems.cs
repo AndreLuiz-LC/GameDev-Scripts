@@ -4,11 +4,20 @@ using UnityEngine;
 
 public class PlayerItems : MonoBehaviour
 {
+    [Header("Amounts")]
     public int currentWood; 
     public int carrots;
-
     public float currentWater;
-    private float waterLimit = 50;
+
+    [Header("Limits")]
+    public float woodLimit = 10;
+    public float carrotsLimit = 5;
+    public float waterLimit = 30;
+    // mesma coisa que tornar as variáveis publicas:
+
+    // public float WoodLimit {get => woodLimit; set => woodLimit = value;}
+    // public float CarrotsLimit {get => carrotsLimit; set => carrotsLimit = value;}
+    // public float WaterLimit {get => waterLimit; set => waterLimit = value;}
 
     public void WaterLimit(float water)
     {

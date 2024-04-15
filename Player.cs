@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     private bool _isDigging;
     private bool _isWatering;
 
-    private int handlingObj;
+    [HideInInspector] public int handlingObj;
 
     private Vector2 _direction;
 
@@ -96,24 +96,6 @@ public class Player : MonoBehaviour
 
     #region Movement
 
-    void OnDig()
-    {
-        if(handlingObj == 2)
-        {
-            if(Input.GetMouseButtonDown(0))
-            {
-                isDigging = true;
-                speed = 0f;
-            }
-
-            if(Input.GetMouseButtonUp(0))
-            {
-                isDigging = false;
-                speed = initialSpeed;
-            }
-        }
-    }
-
     void OnCutting()
     {   
         if(handlingObj == 1)
@@ -127,6 +109,24 @@ public class Player : MonoBehaviour
             if(Input.GetMouseButtonUp(0))
             {
                 isCutting = false;
+                speed = initialSpeed;
+            }
+        }
+    }
+
+    void OnDig()
+    {
+        if(handlingObj == 2)
+        {
+            if(Input.GetMouseButtonDown(0))
+            {
+                isDigging = true;
+                speed = 0f;
+            }
+
+            if(Input.GetMouseButtonUp(0))
+            {
+                isDigging = false;
                 speed = initialSpeed;
             }
         }
