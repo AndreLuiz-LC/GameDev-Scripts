@@ -8,12 +8,14 @@ public class PlayerItems : MonoBehaviour
     public int currentWood; 
     public int carrots;
     public float currentWater;
+    public int fishes;
 
     [Header("Limits")]
     public float woodLimit = 10;
     public float carrotsLimit = 5;
     public float waterLimit = 30;
-    // mesma coisa que tornar as variáveis publicas:
+    public float fishesLimit = 3f;
+    // (abaixo é uma demonstração) mesma coisa que tornar as variáveis publicas:
 
     // public float WoodLimit {get => woodLimit; set => woodLimit = value;}
     // public float CarrotsLimit {get => carrotsLimit; set => carrotsLimit = value;}

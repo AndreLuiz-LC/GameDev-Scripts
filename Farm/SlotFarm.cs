@@ -10,8 +10,8 @@ public class SlotFarm : MonoBehaviour
     [SerializeField] private Sprite carrot;
     
     [Header("Settings")]
-    [SerializeField] private int digAmount; //quantiade de "escavção" ou tempo cavando para cavar o buraco
     [SerializeField] private bool detecting; 
+    [SerializeField] private int digAmount; //quantidade de "escavação" ou tempo cavando para cavar o buraco
     [SerializeField] private float waterAmount; //total de água para nascer uma cenoura
 
 
@@ -61,11 +61,6 @@ public class SlotFarm : MonoBehaviour
             spriteRenderer.sprite = hole; //planta o buraco com a metade da hp
             dugHole = true;
        }
-       
-        // if(digAmount <= 0)
-        // {            
-        //     spriteRenderer.sprite = carrot; //plantar cenoura
-        // }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
